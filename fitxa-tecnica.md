@@ -92,6 +92,35 @@ l'editor.
 | Ha fet un canvi que no volia                     | Recuperar el fitxer com estava amb `git restore fitxa-tecnica.md`.                                 |
 | Les respostes es tornen rares o repetitives      | Escriure `/clear` per buidar la conversa i tornar a començar.                                       |
 
+## Flux de treball amb Git
+
+Com que Claude Code pot modificar fitxers, és important revisar sempre els canvis amb Git
+abans de guardar-los. El flux que faig servir és aquest:
+
+```
+git status
+git diff
+git add fitxa-tecnica.md
+git commit -m "Afegeix fitxa tècnica"
+git log --oneline
+```
+
+Què fa cada ordre:
+
+- `git status` em diu quins fitxers han canviat i quins estan preparats per al commit.
+- `git diff` em mostra línia per línia què s'ha modificat, així puc comprovar que el canvi és
+  el que jo esperava.
+- `git add` posa el fitxer a la zona de preparació (l'*staging*).
+- `git commit -m "..."` guarda el canvi a l'historial amb un missatge que explica què s'ha fet.
+- `git log --oneline` em mostra la llista de commits per veure l'historial.
+
+Val més fer commits petits i sovint que un de molt gran al final, perquè així es veu millor
+què s'ha anat canviant. Quan ja ho tinc tot guardat, pujo els canvis a GitHub:
+
+```
+git push origin main
+```
+
 ## Recursos
 
 - [Documentació de Claude Code](https://docs.claude.com/en/docs/claude-code/overview)
