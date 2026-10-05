@@ -13,6 +13,8 @@ La diferència amb un xat normal és que Claude Code pot veure els fitxers de la
 tens obert, els pot modificar i també pot executar ordres. Sempre et demana permís abans de
 fer un canvi.
 
+![Dibuix del funcionament de Claude Code](imatges/flux-claude-code.svg)
+
 ## Materials
 
 - Un ordinador amb Windows 11.
@@ -81,4 +83,18 @@ l'editor.
 
 ## Incidències i solucions
 
+| Incidència                                       | Solució                                                                                            |
+| ------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| Surt l'error "claude no es reconeix com a ordre" | Tancar el terminal i tornar-lo a obrir. Si segueix igual, afegir la carpeta de npm al PATH.        |
+| La instal·lació falla per permisos               | Obrir el PowerShell com a administrador i tornar-ho a provar.                                      |
+| No s'obre el navegador per iniciar sessió        | Copiar l'enllaç que surt al terminal i enganxar-lo al navegador.                                   |
+| No troba els fitxers del projecte                | Has engegat el programa des d'una altra carpeta. Sortir, fer `cd` a la carpeta bona i tornar-hi.   |
+| Ha fet un canvi que no volia                     | Recuperar el fitxer com estava amb `git restore fitxa-tecnica.md`.                                 |
+| Les respostes es tornen rares o repetitives      | Escriure `/clear` per buidar la conversa i tornar a començar.                                       |
+
 ## Recursos
+
+- [Documentació de Claude Code](https://docs.claude.com/en/docs/claude-code/overview)
+- [Pàgina per descarregar Node.js](https://nodejs.org/)
+- [Documentació de Git](https://git-scm.com/doc)
+- [Documentació consultada](https://docs.github.com/)

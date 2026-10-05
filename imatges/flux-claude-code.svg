@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="150" viewBox="0 0 700 150">
+  <rect width="700" height="150" fill="white"/>
+  <text x="350" y="30" text-anchor="middle" font-family="Arial" font-size="16">Com treballa Claude Code</text>
+
+  <rect x="20" y="60" width="140" height="50" fill="none" stroke="black"/>
+  <text x="90" y="90" text-anchor="middle" font-family="Arial" font-size="13">1. Li demano</text>
+
+  <rect x="200" y="60" width="140" height="50" fill="none" stroke="black"/>
+  <text x="270" y="90" text-anchor="middle" font-family="Arial" font-size="13">2. Llegeix fitxers</text>
+
+  <rect x="380" y="60" width="140" height="50" fill="none" stroke="black"/>
+  <text x="450" y="90" text-anchor="middle" font-family="Arial" font-size="13">3. Fa el canvi</text>
+
+  <rect x="560" y="60" width="120" height="50" fill="none" stroke="black"/>
+  <text x="620" y="90" text-anchor="middle" font-family="Arial" font-size="13">4. Commit</text>
+
+  <line x1="160" y1="85" x2="196" y2="85" stroke="black"/>
+  <polygon points="196,81 204,85 196,89" fill="black"/>
+  <line x1="340" y1="85" x2="376" y2="85" stroke="black"/>
+  <polygon points="376,81 384,85 376,89" fill="black"/>
+  <line x1="520" y1="85" x2="556" y2="85" stroke="black"/>
+  <polygon points="556,81 564,85 556,89" fill="black"/>
+
+  <text x="350" y="135" text-anchor="middle" font-family="Arial" font-size="12">Abans de cada canvi em demana permis</text>
+</svg>
